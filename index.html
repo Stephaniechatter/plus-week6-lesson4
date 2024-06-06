@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>GitHub Repository</title>
+  </head>
+  <body>
+    <div class="weather-container">
+      <header>
+        <form id="search-form" action="">
+          <input
+            type="text"
+            placeholder="Enter a city.."
+            required
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-input-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">London</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, sunny
+              <br />
+              Humidity: <strong>58%</strong>, Wind: <strong>7 mph</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span>
+            <span
+              class="current-temperature-value"
+              id="current-temperature-value"
+              >90</span
+            >
+            <span class="current-temperature-unit">°F</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a
+            href="https://www.shecodes.io/graduates/99026-stephanie-white
+            target="_blank"
+            >Stephanie White</a
+          >
+          on
+          <a
+            href="https://github.com/britniangela/plus-week6-lesson4"
+            target="_blank"
+            >GitHub</a
+          >
+          and is hosted by <a href="#">Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
